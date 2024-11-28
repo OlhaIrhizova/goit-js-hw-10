@@ -1,18 +1,177 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+.body{
+  font-family:"Montserrat", sans-serif;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+a{
+  text-decoration: none;
+}
+
+/*timer*/
+
+.input{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  background-color: #fff;
+  margin-left: 156px;
+  margin-top: 36px;
+}
+.input:hover{
+  border: 1px solid #000;
+}
+.input:active{
+  border: 1px solid #4e75ff;
+}
+.input:disabled{
+  border: 1px solid #808080;
+}
+
+.button{
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  border: none;
+  background-color: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #989898;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active,
+.button:focus{
+  background-color: #6c8cff;
+}
+.button:disabled{
+ background-color:  #cfcfcf;
+}
+
+
+.timer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 24px;
+  width: 346px;
+  height: 72px;
+  padding-top: 32px;
+  margin-left: 156px;
+
+}
+
+.field{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+
+}
+
+.value{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.label{
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
+}
+
+
+/*Snackbar*/
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-label{
+  display: flex;
+  flex-direction:column;
+  gap: 8px;
+  margin-top: 36px;
+  margin-left: 156px;
+  }
+.form-input{
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.fieldset{
+  border-radius: 4px;
+  stroke-width: 1px;
+  stroke: #808080;
+  width: 360px;
+  height:64px;
+  margin-left: 156px;
+  display: flex;
+  justify-content: center;
+  gap:48px;
+}
+
+.form-input:hover{
+border: 1px solid #000;
+}
+
+
+.form-input:focus,
+.form-input:active{
+  border: 1px solid #4e75ff;
+}
+
+.fieldse:hover
+.fieldset:active{
+  stroke: #000;
+}
+
+
+
+
+
+.fieldset-label{
+  display: flex;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  color: #2e2f42;
+  padding: 8px;
+  
+}
+.form-btn{
+border-radius: 8px;
+padding: 8px 16px;
+width: 360px;
+height: 40px;
+background-color:#4e75ff ;
+border: none;
+margin-left: 156px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.form-btn:hover,
+.form-btn:active,
+.form-btn:focus{
+  background-color: #6c8cff;
+}
